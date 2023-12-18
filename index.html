@@ -39,7 +39,7 @@
           class="mx-auto max-w-[80rem] text-center text-very-dark-blue md:grid md:grid-cols-2 md:gap-14 md:text-left"
         >
           <img
-            class="h-full md:col-start-2 md:object-contain"
+            class="h-full max-w-full md:col-start-2 md:object-contain"
             src="./images/illustration-1.svg"
             alt="illustration"
           />
@@ -79,7 +79,7 @@
           class="mx-auto max-w-[80rem] py-24 md:grid md:grid-cols-2 md:gap-28 md:px-0"
         >
           <img
-            class="h-full w-min md:col-start-2 md:object-contain"
+            class="h-full max-w-full md:col-start-2 md:object-contain"
             src="./images/illustration-2.svg"
             alt="illustration"
           />
@@ -99,11 +99,13 @@
                 colleagues for live collaboration. No email attachments
                 required!
               </p>
-              <a
-                class="mx-auto flex gap-2 text-moderate-cyan underline underline-offset-8 after:content-arrow hover:text-light-cyan md:mx-0"
-                href="#"
-                >See how Fylo works</a
-              >
+              <div class="mx-auto inline md:mx-0">
+                <a
+                  class="border-b-[1px] text-moderate-cyan after:content-arrow hover:border-b-light-cyan hover:text-light-cyan"
+                  href="#"
+                  >See how Fylo works
+                </a>
+              </div>
             </div>
             <blockquote
               class="mx-auto flex flex-col gap-3 rounded bg-[#fff] p-6 md:mx-0 md:w-[365px]"
@@ -189,17 +191,21 @@
                   <a
                     href="https://www.frontendmentor.io?ref=challenge"
                     target="_blank"
-                    class="hover:text-cornflower-blue"
+                    class="underline hover:text-cornflower-blue"
                     >Frontend Mentor</a
                   >.<br />Coded by
-                  <a href="#" class="hover:text-cornflower-blue">Pmigix</a>.
+                  <a href="#" class="underline hover:text-cornflower-blue"
+                    >Pmigix</a
+                  >.
                 </p>
               </li>
             </ul>
           </li>
           <li>
             <ul class="flex flex-col gap-4">
-              <li><a class="hover:text-cornflower-blue" href="#">About Us</a></li>
+              <li>
+                <a class="hover:text-cornflower-blue" href="#">About Us</a>
+              </li>
               <li><a class="hover:text-cornflower-blue" href="#">Jobs</a></li>
               <li><a class="hover:text-cornflower-blue" href="#">Press</a></li>
               <li><a class="hover:text-cornflower-blue" href="#">Blog</a></li>
@@ -207,9 +213,13 @@
           </li>
           <li>
             <ul class="flex flex-col gap-4">
-              <li><a class="hover:text-cornflower-blue" href="#">Contact Us</a></li>
+              <li>
+                <a class="hover:text-cornflower-blue" href="#">Contact Us</a>
+              </li>
               <li><a class="hover:text-cornflower-blue" href="#">Terms</a></li>
-              <li><a class="hover:text-cornflower-blue" href="#">Privacy</a></li>
+              <li>
+                <a class="hover:text-cornflower-blue" href="#">Privacy</a>
+              </li>
             </ul>
           </li>
           <li>
